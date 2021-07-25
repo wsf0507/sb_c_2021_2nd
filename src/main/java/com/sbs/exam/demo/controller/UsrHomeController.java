@@ -19,7 +19,6 @@ public class UsrHomeController {
 	@ResponseBody
 	public String showMain2() {
 		return "반갑습니다.";
-		
 
 	}
 
@@ -34,14 +33,17 @@ public class UsrHomeController {
 	@ResponseBody
 	public int showMain4() {
 
-		
-		
-		
-		return num++ ;
-		
-		
-		
+		return num++;
 
 	}
+
 	
+	@RequestMapping("/usr/home/main5")
+	@ResponseBody
+	public String showMain5() {
+
+		num = 0;
+		return "count의 값이 0으로 초기화 되었습니다." ;
+
+	}
 }
